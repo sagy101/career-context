@@ -10,10 +10,10 @@ Senior AI Platform Engineer with 5+ years building production software, AI-assis
 
 ## Skills
 
-**AI Platforms:** Retrieval-augmented generation, agent workflows, prompt evaluation, model integration, AI safety guardrails, human-in-the-loop review  
-**Backend:** Python, TypeScript, Node.js, FastAPI, REST APIs, event-driven services, PostgreSQL, Redis  
-**Frontend:** React, Next.js, design systems, dashboards, accessibility, data visualization  
-**Infrastructure:** Docker, Kubernetes, CI/CD, cloud services, monitoring, feature flags, secure delivery  
+**AI Platforms:** Retrieval-augmented generation, agent workflows, prompt evaluation, model integration, AI safety guardrails, human-in-the-loop review
+**Backend:** Python, TypeScript, Node.js, FastAPI, REST APIs, event-driven services, PostgreSQL, Redis
+**Frontend:** React, Next.js, design systems, dashboards, accessibility, data visualization
+**Infrastructure:** Docker, Kubernetes, CI/CD, cloud services, monitoring, feature flags, secure delivery
 **Leadership:** Technical planning, cross-functional collaboration, mentoring, incident review, roadmap execution
 
 ## Experience
