@@ -92,4 +92,4 @@ Final resume artifacts should be boringly safe: no internal URLs, local source p
 
 ## License
 
-MIT. See `LICENSE`.
+MIT. See [LICENSE](LICENSE).
