@@ -1,0 +1,72 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.0
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-json
+      - id: pretty-format-json
+        args: ["--autofix", "--no-sort-keys"]
+
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.37.1
+    hooks:
+      - id: yamllint
+        args: ["-c", ".yamllint.yaml"]
+
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.18.1
+    hooks:
+      - id: markdownlint-cli2
+
+  - repo: local
+    hooks:
+      - id: validate-context
+        name: Validate resume context graph
+        entry: tools/validate_context.py
+        language: system
+        pass_filenames: false
+
+      - id: validate-resume-artifacts
+        name: Validate resume artifacts
+        entry: tools/validate_resume.py
+        language: system
+        pass_filenames: false
+
+      - id: check-large-files
+        name: Check unexpected large files
+        entry: tools/check_large_files.py
+        language: system
+        pass_filenames: false
+
+      - id: check-artifact-safety
+        name: Check resume artifact metadata safety
+        entry: tools/check_artifact_safety.py
+        language: system
+        pass_filenames: false
+
+      - id: check-template-safety
+        name: Check template safety
+        entry: tools/check_template_safety.py
+        language: system
+        pass_filenames: false
+
+      - id: validate-review-prompts
+        name: Validate final review prompts
+        entry: tools/validate_review_prompts.py
+        language: system
+        pass_filenames: false
+
+      - id: validate-market-scans
+        name: Validate market scans
+        entry: tools/validate_market_scans.py
+        language: system
+        pass_filenames: false

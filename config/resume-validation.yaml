@@ -1,0 +1,51 @@
+expected_pdf_text:
+  - Jordan Example
+  - Senior AI Platform Engineer
+  - Insight Copilot
+  - Connector Studio
+
+expected_docx_text:
+  - Jordan Example
+  - Senior AI Platform Engineer
+  - Insight Copilot
+  - Connector Studio
+
+expected_markdown_links:
+  - https://github.com/jordan-example
+  - https://www.linkedin.com/in/jordan-example
+  - https://jordan.example.com
+
+expected_docx_link_parts:
+  - github.com/jordan-example
+  - linkedin.com/in/jordan-example
+  - jordan.example.com
+
+forbidden_output_patterns:
+  - /Users/[^/\s)]+
+  - /home/[^/\s)]+
+  - "[A-Za-z]:\\\\Users\\\\[^\\\\\\s)]+"
+  - "https?://[^\\s)]+(?:\\.atlassian\\.net|\\.corp|\\.internal|\\.local)\\b"
+  - ghp_[A-Za-z0-9_]{20,}
+  - github_pat_[A-Za-z0-9_]{20,}
+  - glpat-[A-Za-z0-9_-]{20,}
+  - xox[baprs]-[A-Za-z0-9-]{20,}
+  - AKIA[0-9A-Z]{16}
+  - "-----BEGIN [A-Z ]*PRIVATE KEY-----"
+
+forbidden_docx_patterns:
+  - MSIP_Label
+  - sensitivity
+  - /Users/[^/\s)]+
+  - /home/[^/\s)]+
+  - "[A-Za-z]:\\\\Users\\\\[^\\\\\\s)]+"
+  - "https?://[^\\s)]+(?:\\.atlassian\\.net|\\.corp|\\.internal|\\.local)\\b"
+  - ghp_[A-Za-z0-9_]{20,}
+  - github_pat_[A-Za-z0-9_]{20,}
+  - glpat-[A-Za-z0-9_-]{20,}
+  - xox[baprs]-[A-Za-z0-9-]{20,}
+  - AKIA[0-9A-Z]{16}
+  - "-----BEGIN [A-Z ]*PRIVATE KEY-----"
+
+forbidden_pdf_text:
+  - Internal Use Only
+  - Confidential

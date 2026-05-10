@@ -1,0 +1,57 @@
+name: Resume checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends libreoffice poppler-utils ripgrep fonts-crosextra-carlito fonts-liberation
+
+      - name: Install Python tooling
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[dev]"
+
+      - name: Run pre-commit
+        run: pre-commit run --all-files --show-diff-on-failure
+
+      - name: Run resume checks
+        run: tools/check.sh
+
+      - name: Ensure generated artifacts are committed
+        run: |
+          git diff --exit-code -- \
+            context/index-by-date.md \
+            context/index-by-project.md \
+            context/index-by-role.md \
+            context/index-by-skill.md \
+            context/index-by-target-role.md \
+            resumes/current/Jordan_Example_Resume.docx \
+            resumes/current/Jordan_Example_Resume.pdf \
+            resumes/current/preview.png
+
+      - name: Upload resume artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-artifacts
+          retention-days: 7
+          path: |
+            resumes/current/Jordan_Example_Resume.pdf
+            resumes/current/preview.png

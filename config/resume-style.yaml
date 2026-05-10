@@ -1,0 +1,44 @@
+font:
+  family: Calibri
+  name_size: 18
+  contact_size: 8.8
+  normal_size: 8.8
+  summary_size: 8.6
+  body_size: 8.5
+  skill_label_size: 8.45
+  skill_text_size: 8.35
+  bullet_size: 8.45
+  section_size: 9.4
+  role_size: 9.1
+  subrole_size: 8.75
+
+color:
+  accent: "1F4E79"
+  text: "232323"
+
+margins:
+  top: 0.42
+  bottom: 0.42
+  left: 0.55
+  right: 0.55
+
+spacing:
+  name_after: 1
+  contact_after: 5
+  section_before: 2.0
+  section_after: 0.8
+  role_before: 1.5
+  subrole_before: 0.2
+  role_after: 0.2
+  paragraph_after: 1.2
+  skill_after: 0.7
+  bullet_after: 1.15
+
+line_spacing:
+  paragraph: 1.0
+  skill: 0.98
+  bullet: 0.98
+
+indent:
+  bullet_left: 0.18
+  bullet_first_line: -0.11

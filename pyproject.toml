@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "career-context"
+version = "0.1.0"
+description = "Agent-friendly career context and resume operations workspace"
+requires-python = ">=3.12"
+dependencies = [
+  "python-docx>=1.2.0",
+  "PyYAML>=6.0.3",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pre-commit==4.6.0",
+  "ruff==0.15.12",
+]
+
+[tool.setuptools]
+py-modules = []
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
