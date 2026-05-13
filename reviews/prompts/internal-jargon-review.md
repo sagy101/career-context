@@ -25,6 +25,8 @@ If an input is missing, continue the review, state assumptions, and list the gap
 - Check for internal initiative, team, guild, platform, workflow, governance, award, support-flow, ticket, repository, dashboard, or documentation labels.
 - Recommend a public-safe translation that explains the work in external terms.
 - Keep internal project names only when they add credibility and are paired with a functional description.
+- Flag internal project names even when described if the name itself is not externally recognizable and does not add independent credibility. In those cases, recommend removing the name and keeping the functional description.
+- Project names should earn their space. Prefer generic descriptions unless the name is public, explicitly approved for public use, tied to a patent/public artifact, or needed to distinguish multiple systems in the same resume.
 - Do not expose non-public repository names, internal URLs, endpoint names, ticket keys, customer names, vendor-sensitive names, or copied internal documentation.
 - For awards, check whether the resume explains who recognized the candidate, what work the recognition was for, and whether the wording overstates prestige.
 - Flag acronym clusters that read like a tool dump or obscure the accomplishment.
