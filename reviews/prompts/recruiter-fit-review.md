@@ -26,6 +26,8 @@ If an input is missing, continue the review and list the gap under Open Question
 
 - Does the top third quickly communicate the candidate's target-fit identity, seniority, and strongest differentiator?
 - Does the resume read like a credible candidate for the provided role family rather than a generic software engineer?
+- Does each high-visibility section spend space on the strongest role-fit evidence for the desired role, not merely truthful details that are less important for this target?
+- Are the summary stack choices, first current-role bullets, Skills ordering, and strongest metrics aligned with the target role priorities from the active market scan or job posting?
 - Are there enough concrete reasons for a recruiter to move the candidate forward after a fast scan?
 - Are the strongest claims supported by shipped systems, adoption, scale, measurable outcomes, leadership scope, or verified context?
 - For AI-oriented roles, does the resume emphasize production systems, agentic workflows, evaluation, observability, tool use, retrieval quality, governance, and measurable impact when evidence supports those claims?

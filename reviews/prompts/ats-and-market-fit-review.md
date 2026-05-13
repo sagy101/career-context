@@ -40,6 +40,8 @@ Do not overwrite older scans.
 - Does the resume clearly match the exact target role family, not only a broad adjacent role?
 - If a specific posting is provided, does the resume reflect repeated truthful keywords and responsibilities from that posting?
 - Does the summary quickly position the candidate for the target role's seniority and scope?
+- Does the resume prioritize the strongest supported target-role signals from the active market scan or job posting in high-visibility areas such as the summary, Skills section, current-role heading, and first bullets?
+- When space is constrained, are core target-role technologies and responsibilities surfaced where recruiters look first, while truthful but lower-priority technologies or legacy details are kept in Skills or role-specific bullets?
 - Does the resume avoid over-positioning the candidate as a pure ML researcher when evidence supports production AI, full-stack AI, platform, or agentic systems engineering?
 - Does the resume preserve the honest timeline from current context, separating AI-focused work from broader production software engineering and leadership experience?
 - Are supported AI terms from the active market scan present naturally, such as LLMs, agents, agentic workflows, tool/function calling, RAG, retrieval, embeddings, prompt/context engineering, structured outputs, evaluation pipelines, LLM observability, guardrails, and production AI systems when context supports them?
